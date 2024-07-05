@@ -1,0 +1,8 @@
+#!/bin/bash 
+homedir=$(eval echo ~$USER)
+
+mkdir $homedir/mydirectory
+mkdir $homedir/mydirectory/secondDirectory
+touch $homedir/mydirectory/secondDirectory/myNotePaper
+cp $homedir/mydirectory/secondDirectory/myNotePaper $homedir/mydirectory/myNotePaper
+mv $homedir/mydirectory/myNotePaper $homedir/mydirectory/myOldNotePaper
