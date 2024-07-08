@@ -12,7 +12,7 @@ sudo mv searchbinary /usr/local/bin/
 ### Na2Na2a
 ###### 1- 
 <div>
-  <img src="![image](https://github.com/Somiahamdy/Embedded_Linux/assets/89600235/c9c31bc6-02b5-4a6a-952f-9b4144ac779b)" >
+  <img src="![image](https://github.com/Somiahamdy/Embedded_Linux/assets/89600235/c9c31bc6-02b5-4a6a-952f-9b4144ac779b)" width="600" height="150" >
 
 </div>
 
