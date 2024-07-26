@@ -23,7 +23,7 @@ echo "booting from network"
 else
 echo "no option"
 ```
-##### 5. convert booting script from a txt file to a uImage to run on u-boot
+##### 5. convert booting script from .src file to a uImage to run on u-boot
 ```
 mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "Boot Script" -d bootingscript.scr bootingscript.img
 ```
@@ -42,4 +42,3 @@ setenv bootcmd "load mmc 0:1 $loadaddr bootingscript.img"
 saveenv
 reset
 ```
-
