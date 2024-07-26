@@ -23,3 +23,23 @@ echo "booting from network"
 else
 echo "no option"
 ```
+##### 5. convert booting script from a txt file to a uImage to run on u-boot
+```
+mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "Boot Script" -d bootingscript.scr bootingscript.img
+```
+
+##### 6. at qemu set your ip addr and the kernel , fdt & load addresses
+```
+setenv ipaddr 192.168.1.7
+setenv kernel_addr_r 0x601000000
+setenv fdt_addr_r 0x600000000
+setenv loadaddr 0x601000000
+saveenv
+```
+##### 7. at qemu set bootcmd var to run the script once autoboot is done & reset to start the qemu
+```
+setenv bootcmd "load mmc 0:1 $loadaddr bootingscript.img"
+saveenv
+reset
+```
+
