@@ -11,6 +11,8 @@ ip link set tap0 up
 ```
 ip a
 ```
+![tap0](https://github.com/user-attachments/assets/e612e061-d1b7-4b91-ad09-aa15f908bb3f)
+
 ##### 4. create the booting script 
 ```
 #check for mmc existance
@@ -27,6 +29,7 @@ echo "no option"
 ```
 mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n "Boot Script" -d bootingscript.scr bootingscript.img
 ```
+![mkimg](https://github.com/user-attachments/assets/5e00c147-2ad1-42c3-886d-8c92c2c821c5)
 
 ##### 6. at qemu set your ip addr and the kernel , fdt & load addresses
 ```
@@ -42,3 +45,4 @@ setenv bootcmd "load mmc 0:1 $loadaddr bootingscript.img"
 saveenv
 reset
 ```
+
