@@ -1,7 +1,7 @@
 ---
 Booting into NFS server
 ---
-#### 1. Install kernel server
+#### 1. Install NFS kernel server
 ```
 sudo apt install nfs-kernel-server
 ```
@@ -55,7 +55,7 @@ tftp $fdt_addr_r vexpress-v2p-ca9.dtb
 ```
 ![nfszimg](https://github.com/user-attachments/assets/5001b85c-0ea4-4ed9-8ed3-ba7404c8ae77)
 ![nfsdtb](https://github.com/user-attachments/assets/c203506e-6d63-4099-8eb9-2de854f15a95)
-#### 10. Boot loaded files 
+#### 10. Boot the loaded files 
 ```
 bootz $kernel_addr_r - $fdt_addr_r
 ```
