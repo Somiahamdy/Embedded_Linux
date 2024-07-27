@@ -1,3 +1,6 @@
+---
+Booting zImage and .dtb file according to available option 
+===
 ##### 1. Add tap interface on your host machine
 ```
 ip tuntap add tap0 mode tap
