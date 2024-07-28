@@ -1,5 +1,5 @@
 ---
-Booting from different partitions into RAMFS
+Booting into RAMFS by choosing the partition of the rootfs
 ---
 #### 1. Create initramfs directory 
 ```
