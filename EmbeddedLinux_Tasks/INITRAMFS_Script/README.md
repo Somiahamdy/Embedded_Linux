@@ -7,7 +7,7 @@ mkdir initramfs
 ```
 #### 2. Create required directories
 ```
-mkdir sys proc etc root usr dev mnt
+mkdir sys proc etc root usr dev mnt dev/rootfsp1 dev/rootfsp2
 ```
 #### 3. Copy binary files from busybox to initramfs directory
 ```
